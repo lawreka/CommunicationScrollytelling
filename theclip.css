@@ -1,0 +1,33 @@
+.section{
+  height: 90vh;
+  width: 100%;
+  padding-top: 5%;
+}
+#title{
+  width: 70%;
+  margin-left: 20%;
+  margin-right: auto;
+  font-size: 2em;
+  font-style: oblique;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+#theclip{
+  max-width: 50%;
+  max-height: 90%;
+  margin-left: 5%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  padding-top: 2%;
+}
+#intro{
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-right: 10%;
+}
+.text{
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8em;
+}

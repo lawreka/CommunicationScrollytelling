@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <script src="noframework.waypoints.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="clippy.js"></script>
+    <link rel="stylesheet" type="text/css" href="clippy.css" media="all">
+    <link rel="stylesheet" type="text/css" href="theclip.css" media="all">
+  </head>
+  <body>
+    <div id="section1" class="section">
+      <div id="title">
+        The Man, The Clip, The Legend
+        <img id="theclip" src="imgs/theclip.svg"/>
+      </div>
+      <div id="intro" class="text">
+        Microsoft Office Assistant, formally named as "Clipit," but known as "Clippy" in popular culture, is one of the most well-known and most polarizing examples of a conversational interface agent.
+      </div>
+    </div>
+  </body>
+  <script src="theclip.js"></script>
+  <script type="text/javascript">
+    clippy.load('Merlin', function(agent) {
+        // Do anything with the loaded agent
+        agent.show();
+    });
+</script>
+</html>
