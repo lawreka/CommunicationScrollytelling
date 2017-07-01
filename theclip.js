@@ -5,7 +5,11 @@ var waypoint = new Waypoint({
     console.log("waypoint");
   }
 });
-
+//load clippy
+// clippy.load('Clippy', function(agent) {
+//     // Do anything with the loaded agent
+//     agent.show();
+// });
 //play an animation
 // agent.Play('Searching');
 //play a random animation
