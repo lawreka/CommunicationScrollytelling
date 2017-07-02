@@ -17,18 +17,57 @@ function moveRight() {
        });
 };
 
-//this is how wapoints work
 var waypoint = new Waypoint({
-  element: $("#title"),
-  handler: function(){
-    console.log("waypoint");
+  element: $("#top"),
+  handler: function(direction){
+    if (direction == "down"){
+      clippy.load('Clippy', function(agent) {
+          agent.moveTo(50, 100);
+          agent.show();
+          agent.play('LookLeft');
+          agent.play('Wave');
+          agent.speak("That's me!");
+          agent.play("GestureDown");
+      });
+    }
   }
 });
-//load clippy
-// clippy.load('Clippy', function(agent) {
-//     // Do anything with the loaded agent
-//     agent.show();
-// });
+var waypoint = new Waypoint({
+  element: $("#text2"),
+  handler: function(direction){
+    if (direction == "down"){
+      $(".clippy").remove();
+      $(".clippy-balloon").remove();
+    }
+  }
+});
+var waypoint = new Waypoint({
+  element: $("#text3"),
+  handler: function(direction){
+    if (direction == "down"){
+      clippy.load('Clippy', function(agent) {
+          agent.moveTo(50, 100);
+          agent.show();
+          agent.speak("Mi casa es su CASA!");
+      });
+    }
+    else{
+     $(".clippy").remove();
+    }
+  }
+});
+var waypoint = new Waypoint({
+  element: $("#patents"),
+  handler: function(direction){
+    if (direction == "down"){
+      $(".clippy").remove();
+      $(".clippy-balloon").remove();
+    }
+  }
+});
+
+// ["Congratulate", "LookRight", "SendMail", "Thinking", "Explain", "IdleRopePile", "IdleAtom", "Print", "Hide", "GetAttention", "Save", "GetTechy", "GestureUp", "Idle1_1", "Processing", "Alert", "LookUpRight", "IdleSideToSide", "GoodBye", "LookLeft", "IdleHeadScratch", "LookUpLeft", "CheckingSomething", "Hearing_1", "GetWizardy", "IdleFingerTap", "GestureLeft", "Wave", "GestureRight", "Writing", "IdleSnooze", "LookDownRight", "GetArtsy", "Show", "LookDown", "Searching", "EmptyTrash", "Greeting", "LookUp", "GestureDown", "RestPose", "IdleEyeBrowRaise", "LookDownLeft"]
+
 //play an animation
 // agent.Play('Searching');
 //play a random animation

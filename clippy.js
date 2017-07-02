@@ -709,8 +709,10 @@ clippy.Balloon.prototype = {
         switch (side) {
             case 'top-left':
                 // right side of the balloon next to the right side of the agent
-                left = o.left + w - bW;
-                top = o.top - bH - this._BALLOON_MARGIN;
+                // left = o.left + w - bW;
+                // top = o.top - bH - this._BALLOON_MARGIN;
+                left = 15;
+                top = 30;
                 break;
             case 'top-right':
                 // left side of the balloon next to the left side of the agent
@@ -757,7 +759,7 @@ clippy.Balloon.prototype = {
         this.show();
         var c = this._content;
         // set height to auto
-        c.height('auto');
+        c.height('28px');
         c.width('auto');
         // add the text
         c.text(text);
