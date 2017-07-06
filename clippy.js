@@ -846,7 +846,7 @@ clippy.Balloon.prototype = {
 
 };
 
-clippy.BASE_PATH = '/CommunicationScrollytelling/smore-inc-clippy.js-8bfd1f9/agents/';
+clippy.BASE_PATH = 'https://github.com/smore-inc/clippy.js/agents';
 
 clippy.load = function (name, successCb, failCb) {
     var path = clippy.BASE_PATH + name;
