@@ -938,7 +938,7 @@ clippy.load._loadScript = function (src) {
     var script = document.createElement('script');
     script.setAttribute('src', src);
     script.setAttribute('async', 'async');
-    script.setAttribute('type', 'text/javascript');
+    // script.setAttribute('type', 'text/javascript');
 
     document.head.appendChild(script);
 };
