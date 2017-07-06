@@ -846,7 +846,7 @@ clippy.Balloon.prototype = {
 
 };
 
-clippy.BASE_PATH = 'https://github.com/smore-inc/clippy.js/agents/';
+clippy.BASE_PATH = 'https://github.com/smore-inc/clippy.js/tree/master/agents/';
 
 clippy.load = function (name, successCb, failCb) {
     var path = clippy.BASE_PATH + name;
