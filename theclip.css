@@ -41,11 +41,15 @@ a{
   text-align:center;
   margin-left:auto;
   margin-right:auto;
+  font-weight: 900;
+  font-size: 0.8em;
 }
 .quote{
   font-family: 'Asul', sans-serif;
   font-style: italic;
   line-height: 1.5em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .imagediv{
   width: 90%;
@@ -77,4 +81,8 @@ a{
   padding: 0;
   width: 500px;
   height: 300px;
+}
+.sourcestext{
+  color: #808080;
+  font-size: 0.5em;
 }
